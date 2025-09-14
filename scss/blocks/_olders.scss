@@ -1,0 +1,43 @@
+.olders {
+	position: relative;
+	margin-bottom: 56px;
+}
+
+.olders__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0 187px 0;
+}
+.title {
+	color: var(--text-color-primary);
+	font-size: 90px;
+	font-family: var(--font-primary);
+}
+
+.olders-dies {
+	display: flex;
+	justify-content: space-between;
+}
+
+.olders-dies__img {
+	position: relative;
+}
+.dies-1::after {
+	position: absolute;
+	content: '';
+	background-image: url(/img/icons/icon-star.svg);
+	width: 26px;
+	height: 26px;
+	top: 93%;
+	left: 1110px;
+}
+.dies-2::after {
+	position: absolute;
+	content: '';
+	background-image: url(/img/icons/icon-star.svg);
+	width: 26px;
+	height: 26px;
+	top: 54%;
+	left: 1206px;
+}

@@ -1,0 +1,47 @@
+.wrapper-entrance {
+  background: #fecb2f;
+}
+
+.form-group__checkbox {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #B7B7B7;
+}
+
+.form__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-secondery);
+  color: var(--text-color-primary);
+  font-size: 16px;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.form__forgot-password {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline !important;
+  color: #7b7b7b;
+}
+
+.form__btn {
+  margin-top: 42px;
+}
+
+.form__container-entrance {
+  top: 33%;
+}
+
+.account__link-entrance {
+  display: flex;
+  gap: 8px;
+  text-align: center;
+  top: 67%;
+}

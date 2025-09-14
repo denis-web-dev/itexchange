@@ -1,0 +1,170 @@
+.header {
+	margin: 27px 30px;
+}
+
+.header-container {
+	position: relative;
+	max-width: 1410px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__die {
+	position: absolute;
+	aspect-ratio: 1440 / 770;
+	background-size: cover;
+	top: -12px;
+	left: 0;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	padding-right: 10px;
+}
+
+.header__nav-list {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-radius: 30px;
+	background: #ebebeb;
+
+	padding: 15px 18px;
+
+	font-family: Unbounded;
+
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.header__nav-link {
+	margin: 16px;
+	position: relative;
+}
+
+.header__nav-list li a::before {
+	content: ' ';
+	position: absolute;
+	top: 53%;
+	left: 0;
+	right: 100%;
+	height: 2px;
+	background: #51d62c;
+	animation: out 0.3s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.header__nav-list li:hover a:before {
+	animation: in 0.4s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.header__nav-list li:nth-child(1) a {
+	animation: show 0.3s 0.1s ease 1 both;
+}
+
+.header__nav-list li:nth-child(2) a {
+	animation: show 0.3s 0.1s ease 1 both;
+}
+
+.header__nav-list li:nth-child(3) a {
+	animation: show 0.3s 0.1s ease 1 both;
+}
+
+.header__nav-list li:nth-child(4) a {
+	animation: show 0.3s 0.1s ease 1 both;
+}
+
+@keyframes in {
+	0% {
+		width: 0;
+		left: 0;
+		right: auto;
+	}
+
+	100% {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
+
+@keyframes out {
+	0% {
+		width: 100%;
+		left: auto;
+		right: 0;
+	}
+
+	100% {
+		width: 0;
+		left: auto;
+		right: 0;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.header__nav-icons {
+	display: flex;
+	align-items: center;
+	padding-left: 250px;
+}
+
+.nav-like {
+	padding-right: 15px;
+}
+
+.icon {
+	color: #ebebeb;
+	transition-property: color;
+	transition-duration: 0.3s;
+	position: relative;
+}
+
+.icon:hover {
+	color: #51d62c;
+}
+
+.icon:active {
+	color: #000;
+	fill: #fff;
+}
+
+.icon:disabled {
+	color: #ebebeb;
+	fill: #7b7b7b;
+}
+
+.notification::before {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #51d62c;
+	border-radius: 50%;
+	top: 25%;
+	left: 34px;
+	display: none;
+}
+
+.header__user {
+	position: relative;
+	padding-left: 20px;
+}
