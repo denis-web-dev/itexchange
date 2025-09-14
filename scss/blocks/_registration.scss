@@ -32,6 +32,8 @@
 
 .block-bg__close-svg {
   fill: #fff;
+  width: 18px;
+  height: 18px;
 }
 
 .main__title {
@@ -52,7 +54,7 @@
   transform: translateX(-50%);
 }
 
-.form__container-registration{
+.form__container-registration {
   top: 30%;
 }
 
@@ -198,7 +200,6 @@ input:not(:placeholder-shown)+label+.form__star {
 
 .account__link {
   text-align: center;
-  // top: 83%;
 }
 
 .account__entrance-reg {
@@ -224,4 +225,150 @@ input:not(:placeholder-shown)+label+.form__star {
 
 .underline {
   text-decoration: underline;
+}
+
+// Media
+
+@media (max-width: 1024px) {
+  .main__title-create {
+    font-size: 60px;
+    margin-top: 0 !important;
+  }
+
+  .block-bg__close-btn {
+    right: -2px;
+    top: 19px;
+    padding-top: 3px;
+    width: 37px;
+    height: 37px;
+
+  }
+
+  .block-bg__close-svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .account {
+    width: 490px;
+    margin-top: 120px;
+  }
+
+  .customer {
+    width: 250px;
+  }
+
+  .account__close-btn {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 34px;
+    height: 34px;
+    padding-top: 2px;
+    top: -4px;
+    left: 162px;
+    transform: rotate(-14deg);
+  }
+
+  .close-btn__svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .freelancer {
+    width: 250px;
+    top: 64px;
+    left: 240px;
+  }
+
+  .freelancer__close-btn {
+    top: 50px;
+    left: 221px;
+    transform: rotate(12deg);
+  }
+
+  .customer__account-name {
+    font-size: 20px;
+    top: 208px;
+    left: 60px;
+    transform: rotate(-16deg);
+  }
+
+  .freelancer__account-name {
+    font-size: 20px;
+    top: 222px;
+    left: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .main__title {
+      font-size: 50px;
+      line-height: 1;
+    }
+
+    .block-bg__close-btn {
+      right: 0px;
+      top: 15px;
+      padding-top: 3px;
+      width: 26px;
+      height: 26px;
+
+      &.block-bg__close-svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    .account {
+      width: 490px;
+      margin-top: 120px;
+    }
+
+    .customer {
+      width: 250px;
+    }
+
+    .account__close-btn {
+      position: absolute;
+      border-radius: 50%;
+      background-color: #fff;
+      width: 34px;
+      height: 34px;
+      padding-top: 2px;
+      top: -4px;
+      left: 162px;
+      transform: rotate(-14deg);
+    }
+
+    .close-btn__svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    .freelancer {
+      width: 250px;
+      top: 64px;
+      left: 240px;
+    }
+
+    .freelancer__close-btn {
+      top: 50px;
+      left: 221px;
+      transform: rotate(12deg);
+    }
+
+    .customer__account-name {
+      font-size: 20px;
+      top: 208px;
+      left: 60px;
+      transform: rotate(-16deg);
+    }
+
+    .freelancer__account-name {
+      font-size: 20px;
+      top: 222px;
+      left: 10px;
+    }
+
+  }
 }
