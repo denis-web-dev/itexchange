@@ -1,217 +1,220 @@
-.wrapper {
-  padding: 15px;
-}
+body.page-create {
 
-.wrapper-create {
-  background: #fff;
-}
 
-.block-bg {
-  position: relative;
-  display: grid;
-  justify-items: center;
-}
-
-.bg-mobile__svg {
-  display: none;
-}
-
-.block-bg__close-btn {
-  position: absolute;
-  right: 0px;
-  top: 28px;
-  padding-top: 5px;
-  width: 52px;
-  height: 52px;
-  background: #1a1a1a;
-  border-radius: 50%;
-
-  .block-bg__close-svg {
-    width: 18px;
-    height: 18px;
-    fill: #fff;
+  .wrapper {
+    padding: 15px;
   }
-}
 
+  .wrapper-create {
+    background: #fff;
+  }
 
-.main__title {
-  position: absolute;
+  .block-bg {
+    position: relative;
+    display: grid;
+    justify-items: center;
+  }
 
-
-  font-size: 80px;
-  line-height: 99px;
-  letter-spacing: -0.02em;
-  text-align: left;
-
-  color: #1a1a1a;
-
-  padding-left: 25px;
-
-  color: #1a1a1a;
-  z-index: 1;
-}
-
-.account {
-  position: absolute;
-  width: 733px;
-  margin-top: 172px;
-
-}
-
-.account__close-btn {
-  position: absolute;
-  border-radius: 50%;
-  background-color: #fff;
-
-  width: 52px;
-  height: 52px;
-
-  padding-top: 5px;
-
-  left: 246px;
-
-  transform: rotate(17deg);
-}
-
-.account-name {
-  position: absolute;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 31px;
-
-  top: 292px;
-  left: 30px;
-
-  color: #1a1a1a;
-}
-
-.customer {
-  width: 353px;
-}
-
-.customer__close-btn {
-  left: 231px;
-  top: -12px;
-  transform: rotate(348deg);
-}
-
-.customer__account-name {
-  transform: rotate(-15deg);
-  left: 90px;
-}
-
-.freelancer {
-  position: absolute;
-  top: 90px;
-  left: 345px;
-}
-
-.freelancer__close-btn {
-  left: 313px;
-  top: 67px;
-}
-
-.freelancer__account-name {
-  transform: rotate(15deg);
-}
-
-.account__entrance {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-
-  color: #ffffff;
-}
-
-.account__link {
-  position: absolute;
-  bottom: 30px;
-}
-
-.account__link-enter {
-  position: relative;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-
-  text-decoration-line: underline !important;
-
-  color: #1a1a1a;
-}
-
-// Media
-
-@media (max-width: 1024px) {
-  .main__title-create {
-    font-size: 60px;
-    margin-top: 0;
+  .bg-mobile__svg {
+    display: none;
   }
 
   .block-bg__close-btn {
-    right: -2px;
-    top: 19px;
-    padding-top: 3px;
-    width: 37px;
-    height: 37px;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+    padding-top: 5px;
+    width: 52px;
+    height: 52px;
+    background: #1a1a1a;
+    border-radius: 50%;
 
     .block-bg__close-svg {
-      width: 14px;
-      height: 14px;
+      width: 18px;
+      height: 18px;
+      fill: #fff;
     }
   }
 
-  .account {
-    width: 490px;
-    margin-top: 120px;
+  .main__title {
+    position: absolute;
+
+
+    font-size: 80px;
+    line-height: 99px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    color: #1a1a1a;
+
+    padding-left: 25px;
+
+    color: #1a1a1a;
+    z-index: 1;
   }
 
-  .customer {
-    width: 250px;
+  .account {
+    position: absolute;
+    width: 733px;
+    margin-top: 172px;
+
   }
 
   .account__close-btn {
     position: absolute;
     border-radius: 50%;
     background-color: #fff;
-    width: 34px;
-    height: 34px;
-    padding-top: 2px;
-    top: -4px;
-    left: 162px;
-    transform: rotate(-14deg);
+
+    width: 52px;
+    height: 52px;
+
+    padding-top: 5px;
+
+    left: 246px;
+
+    transform: rotate(17deg);
   }
 
-  .close-btn__svg {
-    width: 13px;
-    height: 13px;
+  .account-name {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+
+    top: 292px;
+    left: 30px;
+
+    color: #1a1a1a;
   }
 
-  .freelancer {
-    width: 250px;
-    top: 64px;
-    left: 240px;
+  .customer {
+    width: 353px;
   }
 
-  .freelancer__close-btn {
-    top: 50px;
-    left: 221px;
-    transform: rotate(12deg);
+  .customer__close-btn {
+    left: 231px;
+    top: -12px;
+    transform: rotate(348deg);
   }
 
   .customer__account-name {
-    font-size: 20px;
-    top: 208px;
-    left: 60px;
-    transform: rotate(-16deg);
+    transform: rotate(-15deg);
+    left: 90px;
+  }
+
+  .freelancer {
+    position: absolute;
+    top: 90px;
+    left: 345px;
+  }
+
+  .freelancer__close-btn {
+    left: 313px;
+    top: 67px;
   }
 
   .freelancer__account-name {
-    font-size: 20px;
-    top: 222px;
-    left: 10px;
+    transform: rotate(15deg);
+  }
+
+  .account__entrance {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #ffffff;
+  }
+
+  .account__link {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .account__link-enter {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration-line: underline !important;
+
+    color: #1a1a1a;
+  }
+
+  // Media
+
+  @media (max-width: 1024px) {
+    .main__title-create {
+      font-size: 60px;
+      margin-top: 0;
+    }
+
+    .block-bg__close-btn {
+      right: -2px;
+      top: 19px;
+      padding-top: 3px;
+      width: 37px;
+      height: 37px;
+
+      .block-bg__close-svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .account {
+      width: 490px;
+      margin-top: 120px;
+    }
+
+    .customer {
+      width: 250px;
+    }
+
+    .account__close-btn {
+      position: absolute;
+      border-radius: 50%;
+      background-color: #fff;
+      width: 34px;
+      height: 34px;
+      padding-top: 2px;
+      top: -4px;
+      left: 162px;
+      transform: rotate(-14deg);
+    }
+
+    .close-btn__svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    .freelancer {
+      width: 250px;
+      top: 64px;
+      left: 240px;
+    }
+
+    .freelancer__close-btn {
+      top: 50px;
+      left: 221px;
+      transform: rotate(12deg);
+    }
+
+    .customer__account-name {
+      font-size: 20px;
+      top: 208px;
+      left: 60px;
+      transform: rotate(-16deg);
+    }
+
+    .freelancer__account-name {
+      font-size: 20px;
+      top: 222px;
+      left: 10px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -307,6 +310,7 @@
       background-color: #0CB761;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+
       .block-bg__close-btn-create {
         right: 10px;
         top: 10px;
@@ -386,19 +390,21 @@
     }
 
     .main__title {
+      display: block;
       max-width: 170px;
       font-size: 27px;
-      padding-top: 10px;
+      padding-top: 0px;
       padding-left: 10px;
     }
 
-    .block-bg__close-btn {
-      display: block;
+
+    body.page-create .block-bg .block-bg__close-btn-create {
       right: 10px;
       top: 10px;
-      padding-top: 5px;
-      width: 44px;
-      height: 44px;
+      padding-top: 4px;
+      width: 33px;
+      height: 33px;
+
 
       .block-bg__close-svg {
         width: 18px;
