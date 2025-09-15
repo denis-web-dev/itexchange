@@ -19,16 +19,20 @@
 .block-bg__close-btn {
   position: absolute;
   right: 0px;
+  top: 28px;
   padding-top: 5px;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   background: #1a1a1a;
   border-radius: 50%;
+
+  .block-bg__close-svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+  }
 }
 
-.block-bg__close-svg {
-  fill: #fff;
-}
 
 .main__title {
   position: absolute;
@@ -283,22 +287,37 @@
   }
 
   @media (max-width: 425px) {
-    // .wrapper-create {
-    //   background: #0cb660;
-    // }
+    .container {
+      padding: 10px;
+    }
 
-    .main__title {
+    .wrapper-create {
+      padding: 0;
+    }
+
+    .main__title-create {
       font-size: 42px;
-      margin-top: 0px;
+      margin-top: 10px;
       line-height: 1;
     }
 
-    .block-bg__close-btn {
-      display: none;
-    }
 
     .block-bg {
       height: 100vh;
+      background-color: #0CB761;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      .block-bg__close-btn-create {
+        right: 10px;
+        top: 10px;
+        padding-top: 0px;
+        width: 33px;
+        height: 33px;
+      }
+    }
+
+    .block-bg__svg {
+      display: none;
     }
 
     .account {
