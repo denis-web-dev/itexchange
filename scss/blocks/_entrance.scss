@@ -1,11 +1,9 @@
 body.page-entrance {
-  .wrapper {
-    align-content: center;
-    padding: 15px;
-    min-height: 100vh;
-  }
 
   .wrapper-entrance {
+    align-content: center;
+      padding: 15px;
+      min-height: 100vh;
     background: #fecb2f;
   }
 
@@ -55,9 +53,10 @@ body.page-entrance {
     z-index: 1;
   }
 
-  .form__container {
+  .form__container-entrance {
     position: absolute;
     left: 50%;
+    top: 33%;
     transform: translateX(-50%);
   }
 
@@ -213,10 +212,6 @@ body.page-entrance {
 
   .toggle__password-svg {
     fill: #7b7b7b;
-  }
-
-  .form__container-entrance {
-    top: 33%;
   }
 
   .form__checkbox {
