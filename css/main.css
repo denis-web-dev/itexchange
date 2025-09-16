@@ -1594,8 +1594,22 @@ body.page-entrance .form__checkbox-label {
   font-size: 16px;
 }
 body.page-entrance .form__checkbox {
+  position: relative;
   width: 20px;
   height: 20px;
+}
+body.page-entrance .form__checkbox:checked {
+  border: none;
+}
+body.page-entrance .form__checkbox:checked::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/icons/checkBox.svg);
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: none;
 }
 body.page-entrance .form-group input:not(:-moz-placeholder) + label {
   transform: translateY(-50%) translateX(347px);
@@ -1866,6 +1880,9 @@ body.page-entrance .account__link-enter {
     height: 48px;
     padding: 12px 24px;
     margin-bottom: 16px;
+  }
+  body.page-entrance .toggle__password-svg {
+    padding-top: 5px;
   }
   body.page-entrance .account__link {
     position: absolute;

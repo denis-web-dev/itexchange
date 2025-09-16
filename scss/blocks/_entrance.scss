@@ -2,8 +2,8 @@ body.page-entrance {
 
   .wrapper-entrance {
     align-content: center;
-      padding: 15px;
-      min-height: 100vh;
+    padding: 15px;
+    min-height: 100vh;
     background: #fecb2f;
   }
 
@@ -112,9 +112,11 @@ body.page-entrance {
     font-size: 16px;
     transition: all 0.3s ease;
   }
-  .form-group__checkbox{
+
+  .form-group__checkbox {
     padding-left: 5px;
   }
+
   .form__checkbox-label {
     display: flex;
     align-items: center;
@@ -125,8 +127,24 @@ body.page-entrance {
   }
 
   .form__checkbox {
+    position: relative;
     width: 20px;
     height: 20px;
+  }
+
+  .form__checkbox:checked {
+    border: none;
+  }
+
+  .form__checkbox:checked::after {
+    content: "";
+    position: absolute;
+    background-image: url(/img/icons/checkBox.svg);
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: none;
   }
 
   .form-group input:focus+label,
@@ -422,12 +440,17 @@ body.page-entrance {
       width: 330px;
       height: 45px;
     }
-        .form-group input {
-          width: 330px;
-          height: 48px;
-          padding: 12px 24px;
-          margin-bottom: 16px;
-        }
+
+    .form-group input {
+      width: 330px;
+      height: 48px;
+      padding: 12px 24px;
+      margin-bottom: 16px;
+    }
+
+    .toggle__password-svg {
+      padding-top: 5px;
+    }
 
     .account__link {
       position: absolute;
