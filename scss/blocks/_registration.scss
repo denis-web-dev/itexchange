@@ -457,6 +457,21 @@ body.page-registration {
       position: absolute;
       bottom: 10px;
     }
+
+    .form-group input {
+      width: 330px;
+      height: 48px;
+      padding: 12px 20px;
+      margin-bottom: 16px;
+    }
+
+    .form__btn {
+      height: 48px;
+    }
+
+    .toggle__password-svg {
+      padding-top: 5px;
+    }
   }
 
   @media (max-width: 320px) {

@@ -1370,6 +1370,18 @@ body.page-registration .underline {
     position: absolute;
     bottom: 10px;
   }
+  body.page-registration .form-group input {
+    width: 330px;
+    height: 48px;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+  }
+  body.page-registration .form__btn {
+    height: 48px;
+  }
+  body.page-registration .toggle__password-svg {
+    padding-top: 5px;
+  }
 }
 @media (max-width: 320px) {
   body.page-registration .container {
