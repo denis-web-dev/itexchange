@@ -1,6 +1,386 @@
-.wrapper-newpass{
-  background: #0cb760;
-}
-.form__container-newpass{
-  top: 40%;
+body.page-newpass {
+
+  .wrapper-newpass {
+    align-content: center;
+    padding: 15px;
+    min-height: 100vh;
+    background: #0CB760;
+  }
+
+  .block-bg {
+    position: relative;
+    display: grid;
+    justify-items: center;
+  }
+
+  .block-bg__svg {
+    fill: #fff;
+  }
+
+  .main__title-newpass {
+    position: absolute;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1a1a1a;
+    padding-top: 55px;
+    padding-left: 25px;
+    z-index: 1;
+  }
+
+  .block-bg__close-btn {
+    position: absolute;
+    right: 0px;
+    top: 31px;
+    padding-top: 5px;
+    width: 48px;
+    height: 48px;
+    background: #1a1a1a;
+    border-radius: 50%;
+  }
+
+  .block-bg__close-svg {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+  }
+
+  .form__container-newpass {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+  }
+
+  .form-group {
+    position: relative;
+    font-family: var(--font-secondery);
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #7b7b7b;
+
+
+    &.form-group input {
+      width: 430px;
+      height: 56px;
+      padding: 16px 24px;
+
+      background: #ffffff;
+
+      border: 1px solid #b7b7b7;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    &.form-group input:focus {
+      border-color: #37f737;
+      caret-color: #37f737;
+    }
+
+    &.form-group input::placeholder {
+      color: transparent;
+    }
+
+    &.form-group label {
+      position: absolute;
+      top: 40%;
+      left: 15px;
+      transform: translateY(-50%) translateX(0);
+      padding: 0 5px;
+      cursor: text;
+      color: #7b7b7b;
+      pointer-events: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    &.form-group__password input:focus+label,
+    &.form-group__password input:valid+label,
+    &.form-group__password input:not(:placeholder-shown)+label {
+      transform: translateY(-58%) translateX(240px);
+    }
+
+    &.form-group__confirm-password input:focus+label,
+    &.form-group__confirm-password input:valid+label,
+    &.form-group__confirm-password input:not(:placeholder-shown)+label {
+      transform: translateY(-58%) translateX(225px);
+    }
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+
+  .toggle__password-svg {
+    fill: #7b7b7b;
+  }
+
+  .form__btn {
+    width: 430px;
+    height: 52px;
+    padding: 16px 32px;
+    background: #37f737;
+    border-radius: 100px;
+
+    font-family: Unbounded;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+    color: #1a1a1a;
+    margin-top: 16px;
+
+    &.form__btn:active {
+      background: #1a1a1a;
+      color: #fff;
+      transition: ease-in 0.2s;
+    }
+
+    &.form__btn:hover {
+      background: #1a1a1a;
+      color: #fff;
+      transition: ease-in 0.2s;
+    }
+  }
+
+  // Media
+
+  @media (max-width: 1024px) {
+    .main__title-newpass {
+      font-size: 56px;
+      padding-top: 20px;
+    }
+
+    .block-bg__close-btn {
+      top: 18px;
+      right: -5px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .form__container-newpass {
+      top: 36%;
+
+      .form__btn {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main__title-newpass {
+      font-size: 48px;
+      padding-top: 20px;
+    }
+
+    .block-bg__close-btn {
+      top: 13px;
+      right: -6px;
+      width: 30px;
+      height: 30px;
+      padding-top: 3px;
+
+      .block-bg__close-svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+
+    .form__container-newpass {
+      top: 32%;
+
+      .form-group input {
+        width: 330px;
+        height: 40px;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+      }
+
+      .form-group label {
+        font-size: 14px;
+      }
+
+      .toggle-password {
+        top: 10px;
+      }
+
+      .form__btn {
+        width: 330px;
+        height: 40px;
+        margin-top: 10px;
+        padding: 11px 32px;
+      }
+
+      .form-group__password input:focus+label,
+      .form-group__password input:valid+label,
+      .form-group__password input:not(:placeholder-shown)+label {
+        transform: translateY(-50%) translateX(160px);
+      }
+
+      .form-group__confirm-password input:focus+label,
+      .form-group__confirm-password input:valid+label,
+      .form-group__confirm-password input:not(:placeholder-shown)+label {
+        transform: translateY(-50%) translateX(150px);
+      }
+
+    }
+  }
+
+  @media (max-width: 425px) {
+    .container {
+      padding: 10px;
+    }
+
+    .wrapper-newpass {
+      padding: 0;
+    }
+
+    .main__title-newpass {
+      position: absolute;
+
+      display: block;
+      max-width: 300px;
+      font-size: 32px;
+      line-height: 1;
+      padding-top: 10px;
+      padding-left: 10px;
+      z-index: 1;
+    }
+
+    .block-bg {
+      background-color: #ffffff;
+      height: 100vh;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .block-bg__close-btn {
+      right: 10px;
+      top: 10px;
+      padding-top: 3px;
+      width: 38px;
+      height: 38px;
+
+      .block-bg__close-svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .form__container-newpass {
+      top: 20%;
+
+      .form-group input {
+        width: 330px;
+        height: 48px;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+      }
+
+      .form-group label {
+        font-size: 16px;
+      }
+
+      .toggle-password {
+        top: 15px;
+      }
+
+      .form__btn {
+        width: 330px;
+        height: 48px;
+        margin-top: 10px;
+        padding: 11px 32px;
+      }
+
+      .form-group__password input:focus+label,
+      .form-group__password input:valid+label,
+      .form-group__password input:not(:placeholder-shown)+label {
+        transform: translateY(-50%) translateX(145px);
+      }
+
+      .form-group__confirm-password input:focus+label,
+      .form-group__confirm-password input:valid+label,
+      .form-group__confirm-password input:not(:placeholder-shown)+label {
+        transform: translateY(-50%) translateX(130px);
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .container {
+      padding: 10px;
+    }
+
+    .wrapper-newpass {
+      padding: 0;
+    }
+
+    .main__title-newpass {
+      position: absolute;
+      display: block;
+      max-width: 300px;
+      font-size: 27px;
+      line-height: 1;
+      padding-top: 10px;
+      padding-left: 10px;
+      z-index: 1;
+    }
+
+    .block-bg {
+      background-color: #ffffff;
+      height: 100vh;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .block-bg__close-btn {
+      display: none;
+    }
+
+    .form__container-newpass {
+      top: 10%;
+
+      .form-group input {
+        width: 256px;
+        height: 56px;
+        padding: 12px 20px;
+        margin-bottom: 21px;
+      }
+
+      .form-group label {
+        font-size: 16px;
+      }
+
+      .toggle-password {
+        top: 15px;
+      }
+
+      .form__btn {
+        width: 256px;
+        height: 56px;
+        margin-top: 0px;
+        padding: 11px 32px;
+      }
+
+      .form-group__password input:focus+label,
+      .form-group__password input:valid+label,
+      .form-group__password input:not(:placeholder-shown)+label {
+        display: none;
+      }
+
+      .form-group__confirm-password input:focus+label,
+      .form-group__confirm-password input:valid+label,
+      .form-group__confirm-password input:not(:placeholder-shown)+label {
+        display: none;
+      }
+    }
+  }
+
 }
